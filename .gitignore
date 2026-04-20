@@ -1,0 +1,48 @@
+# ==========================================
+# BUSHIKAI DIGITAL - MASTER GITIGNORE
+# ==========================================
+
+# --- SISTEMA Y LOGS ---
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# --- EDITOR (VS Code) ---
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# --- BACKEND (Python / FastAPI) ---
+# Entornos virtuales
+venv/
+.venv/
+env/
+/backend/venv/
+
+# Cache de Python (Recursivo)
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Base de Datos (Seguridad de datos de atletas)
+*.db
+*.db-journal
+*.sqlite3
+**/backend/*.db
+
+# Variables de entorno (Secretos)
+.env
+backend/.env
+
+# --- FRONTEND (Astro / Node / React) ---
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.astro/
+frontend/.astro/
+
+# --- DOCKER ---
+.docker/
