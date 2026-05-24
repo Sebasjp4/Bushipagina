@@ -1,0 +1,28 @@
+import { Link } from 'react-router-dom'
+
+export default function Landing() {
+  return (
+    <main className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
+      <span className="px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-red-500 uppercase border border-red-500/30 rounded-full bg-red-500/10">
+        Sistema V1.0
+      </span>
+
+      <h1 className="mb-4 text-5xl font-extrabold tracking-tight md:text-7xl">
+        Bushikai <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">Digital</span>
+      </h1>
+
+      <p className="max-w-2xl mb-8 text-lg text-slate-400 md:text-xl">
+        Centro de gestión y alto rendimiento para karatekas de élite. Mide tu progreso, planifica tus torneos y entrena para ganar.
+      </p>
+
+      <div className="flex flex-col gap-4 sm:flex-row">
+        <Link to="/login" className="px-8 py-3 font-bold text-white transition-all bg-red-600 rounded-lg hover:bg-red-700 hover:scale-105">
+          Portal del Atleta
+        </Link>
+        <a href="#unete" className="px-8 py-3 font-bold transition-all border rounded-lg text-slate-300 border-slate-700 hover:bg-slate-800 hover:text-white">
+          Agendar Clase Gratis
+        </a>
+      </div>
+    </main>
+  )
+}
